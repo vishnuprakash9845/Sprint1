@@ -9,7 +9,4 @@ public class LoginPage extends BasePage{
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
-	
-	
-
 }
