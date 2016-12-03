@@ -25,7 +25,9 @@ public class VerifyProductVersion extends BaseTest{
 		EnterTimeTrackPage e=new EnterTimeTrackPage(driver);
 		e.clickHelp();		
 		e.clickAboutActiTIME();
+		
 		WaitForMoment.wait(2);
+		
 		e.verifyProductVersion(version);
 		e.clickCloseButton();
 		e.clickLogoutLink();
