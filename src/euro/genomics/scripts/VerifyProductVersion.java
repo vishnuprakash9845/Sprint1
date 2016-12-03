@@ -17,9 +17,11 @@ public class VerifyProductVersion extends BaseTest{
 		String pw=Excel.getCellValue(XL_PATH,sheet,1, 1);
 		String version=Excel.getCellValue(XL_PATH,sheet,1, 2);
 		
+		//enter valid un and pw
 		LoginPage l=new LoginPage(driver);
 		l.setUserName(un);
 		l.setPassword(pw);
+		//click login
 		l.clickLogin();
 		WaitForMoment.wait(3);
 		EnterTimeTrackPage e=new EnterTimeTrackPage(driver);
@@ -28,6 +30,7 @@ public class VerifyProductVersion extends BaseTest{
 		WaitForMoment.wait(2);
 		e.verifyProductVersion(version);
 		e.clickCloseButton();
+		//click on logout
 		e.clickLogoutLink();
 		
 		

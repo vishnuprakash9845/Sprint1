@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
+      <class name="euro.genomics.scripts.ValidLoginLogout">
+        <methods>
+          <include name="testValidLoginLogout"/>
+        </methods>
+      </class> <!-- euro.genomics.scripts.ValidLoginLogout -->
       <class name="euro.genomics.scripts.VerifyProductVersion">
         <methods>
-          <include name="postCondition"/>
           <include name="testVerifyProductVersion"/>
-          <include name="preCondition"/>
         </methods>
       </class> <!-- euro.genomics.scripts.VerifyProductVersion -->
+      <class name="euro.genomics.scripts.InvalidLogin">
+        <methods>
+          <include name="testInvaliLogin"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- euro.genomics.scripts.InvalidLogin -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

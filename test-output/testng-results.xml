@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="132573" started-at="2016-12-03T14:37:10Z" finished-at="2016-12-03T14:39:23Z">
+  <suite name="Suite" duration-ms="68471" started-at="2016-12-03T17:08:57Z" finished-at="2016-12-03T17:10:06Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="132573" started-at="2016-12-03T14:37:10Z" finished-at="2016-12-03T14:39:23Z">
+    <test name="Test" duration-ms="68471" started-at="2016-12-03T17:08:57Z" finished-at="2016-12-03T17:10:06Z">
       <class name="euro.genomics.scripts.InvalidLogin">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:euro.genomics.scripts.InvalidLogin@7dc7cbad]" name="preCondition" is-config="true" duration-ms="33938" started-at="2016-12-03T20:07:10Z" finished-at="2016-12-03T20:07:44Z">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:euro.genomics.scripts.InvalidLogin@22a71081]" name="preCondition" is-config="true" duration-ms="9582" started-at="2016-12-03T22:38:57Z" finished-at="2016-12-03T22:39:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="testInvaliLogin()[pri:0, instance:euro.genomics.scripts.InvalidLogin@7dc7cbad]" name="testInvaliLogin" duration-ms="28282" started-at="2016-12-03T20:07:44Z" finished-at="2016-12-03T20:08:13Z">
+        <test-method status="PASS" signature="testInvaliLogin()[pri:0, instance:euro.genomics.scripts.InvalidLogin@22a71081]" name="testInvaliLogin" duration-ms="18993" started-at="2016-12-03T22:39:07Z" finished-at="2016-12-03T22:39:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvaliLogin -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:euro.genomics.scripts.InvalidLogin@7dc7cbad]" name="postCondition" is-config="true" duration-ms="17" started-at="2016-12-03T20:08:13Z" finished-at="2016-12-03T20:08:13Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:euro.genomics.scripts.InvalidLogin@22a71081]" name="postCondition" is-config="true" duration-ms="12" started-at="2016-12-03T22:39:26Z" finished-at="2016-12-03T22:39:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- euro.genomics.scripts.InvalidLogin -->
       <class name="euro.genomics.scripts.VerifyProductVersion">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:euro.genomics.scripts.VerifyProductVersion@4f933fd1]" name="preCondition" is-config="true" duration-ms="21879" started-at="2016-12-03T20:08:47Z" finished-at="2016-12-03T20:09:09Z">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:euro.genomics.scripts.VerifyProductVersion@629f0666]" name="preCondition" is-config="true" duration-ms="16650" started-at="2016-12-03T22:39:41Z" finished-at="2016-12-03T22:39:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="testVerifyProductVersion()[pri:0, instance:euro.genomics.scripts.VerifyProductVersion@4f933fd1]" name="testVerifyProductVersion" duration-ms="12925" started-at="2016-12-03T20:09:09Z" finished-at="2016-12-03T20:09:22Z">
+        <test-method status="PASS" signature="testVerifyProductVersion()[pri:0, instance:euro.genomics.scripts.VerifyProductVersion@629f0666]" name="testVerifyProductVersion" duration-ms="7718" started-at="2016-12-03T22:39:57Z" finished-at="2016-12-03T22:40:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyProductVersion -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:euro.genomics.scripts.VerifyProductVersion@4f933fd1]" name="postCondition" is-config="true" duration-ms="750" started-at="2016-12-03T20:09:22Z" finished-at="2016-12-03T20:09:23Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:euro.genomics.scripts.VerifyProductVersion@629f0666]" name="postCondition" is-config="true" duration-ms="513" started-at="2016-12-03T22:40:05Z" finished-at="2016-12-03T22:40:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- euro.genomics.scripts.VerifyProductVersion -->
       <class name="euro.genomics.scripts.ValidLoginLogout">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:euro.genomics.scripts.ValidLoginLogout@d2cc05a]" name="preCondition" is-config="true" duration-ms="20242" started-at="2016-12-03T20:08:13Z" finished-at="2016-12-03T20:08:33Z">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:euro.genomics.scripts.ValidLoginLogout@3930015a]" name="preCondition" is-config="true" duration-ms="10709" started-at="2016-12-03T22:39:26Z" finished-at="2016-12-03T22:39:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="testValidLoginLogout()[pri:0, instance:euro.genomics.scripts.ValidLoginLogout@d2cc05a]" name="testValidLoginLogout" duration-ms="14415" started-at="2016-12-03T20:08:33Z" finished-at="2016-12-03T20:08:47Z">
+        <test-method status="PASS" signature="testValidLoginLogout()[pri:0, instance:euro.genomics.scripts.ValidLoginLogout@3930015a]" name="testValidLoginLogout" duration-ms="4245" started-at="2016-12-03T22:39:37Z" finished-at="2016-12-03T22:39:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLoginLogout -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:euro.genomics.scripts.ValidLoginLogout@d2cc05a]" name="postCondition" is-config="true" duration-ms="12" started-at="2016-12-03T20:08:47Z" finished-at="2016-12-03T20:08:47Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:euro.genomics.scripts.ValidLoginLogout@3930015a]" name="postCondition" is-config="true" duration-ms="21" started-at="2016-12-03T22:39:41Z" finished-at="2016-12-03T22:39:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
