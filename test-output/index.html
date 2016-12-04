@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="euro.genomics.scripts.InvalidLogin" hash-for-method="testInvaliLogin">testInvaliLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -111,6 +125,16 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="euro.genomics.scripts.ValidLoginLogout" hash-for-method="testValidLoginLogout">testValidLoginLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="euro.genomics.scripts.VerifyProductVersion" hash-for-method="testVerifyProductVersion">testVerifyProductVersion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="euro.genomics.scripts.VerifyProductVersion" hash-for-method="testVerifyProductVersion">testVerifyProductVersion</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -126,9 +150,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">euro.genomics.scripts.InvalidLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -137,6 +161,97 @@
                   <a name="testInvaliLogin">
                   </a> <!-- testInvaliLogin -->
                   <span class="method-name">testInvaliLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=55.0.2883.75)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 215 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;VISHNU-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\VISHNU\AppData\Local\Temp\scoped_dir3760_18784}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.75, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19949424add280c4d10ccb49510c1545
+Command duration or timeout: 1.68 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;Inspiron3542&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\VISHNU\AppData\Local\Temp\scoped_dir3760_18784}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.75, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=c9b71977-e465-4062-bc91-2f0d5d878e63, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c9b71977-e465-4062-bc91-2f0d5d878e63
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:368)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at euro.genomics.pom.LoginPage.verifyErrMsgDisplayed(LoginPage.java:45)
+	at euro.genomics.scripts.InvalidLogin.testInvaliLogin(InvalidLogin.java:25)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;Inspiron3542&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 31 more
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=55.0.2883.75)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 215 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;VISHNU-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\VISHNU\AppData\Local\Temp\scoped_dir3760_18784}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.75, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19949424add280c4d10ccb49510c1545
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;Inspiron3542&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:368)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy2.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.isDisplayed(EventFiringWebDriver.java:389)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy3.isDisplayed(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.GetElementDisplayed.call(GetElementDisplayed.java:32)
+	at org.openqa.selenium.remote.server.handler.GetElementDisplayed.call(GetElementDisplayed.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">euro.genomics.scripts.VerifyProductVersion</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testVerifyProductVersion">
+                  </a> <!-- testVerifyProductVersion -->
+                  <span class="method-name">testVerifyProductVersion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testVerifyProductVersion">
+                  </a> <!-- testVerifyProductVersion -->
+                  <span class="method-name">testVerifyProductVersion</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -154,19 +269,26 @@
                   <span class="method-name">testValidLoginLogout</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLoginLogout">
+                  </a> <!-- testValidLoginLogout -->
+                  <span class="method-name">testValidLoginLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">euro.genomics.scripts.VerifyProductVersion</span>
+              <span class="class-name">euro.genomics.scripts.InvalidLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testVerifyProductVersion">
-                  </a> <!-- testVerifyProductVersion -->
-                  <span class="method-name">testVerifyProductVersion</span>
+                  <a name="testInvaliLogin">
+                  </a> <!-- testInvaliLogin -->
+                  <span class="method-name">testInvaliLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,14 +302,25 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;Test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;TestFF_VishnuDesktop&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;remoteURL&quot; value=&quot;http://192.168.1.4:4444/wd/hub&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;euro.genomics.scripts.InvalidLogin&quot;/&gt;
       &lt;class name=&quot;euro.genomics.scripts.ValidLoginLogout&quot;/&gt;
       &lt;class name=&quot;euro.genomics.scripts.VerifyProductVersion&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- TestFF_VishnuDesktop --&gt;
+  &lt;test name=&quot;TestChrome_VishnuDesktop&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;remoteURL&quot; value=&quot;http://192.168.1.4:4444/wd/hub&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;euro.genomics.scripts.InvalidLogin&quot;/&gt;
+      &lt;class name=&quot;euro.genomics.scripts.ValidLoginLogout&quot;/&gt;
+      &lt;class name=&quot;euro.genomics.scripts.VerifyProductVersion&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestChrome_VishnuDesktop --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -199,7 +332,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">TestFF_VishnuDesktop (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">TestChrome_VishnuDesktop (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,24 +361,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testInvaliLogin')
 data.setCell(0, 2, 'euro.genomics.scripts.InvalidLogin')
-data.setCell(0, 3, 18993);
+data.setCell(0, 3, 19467);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testVerifyProductVersion')
-data.setCell(1, 2, 'euro.genomics.scripts.VerifyProductVersion')
-data.setCell(1, 3, 7718);
+data.setCell(1, 1, 'testValidLoginLogout')
+data.setCell(1, 2, 'euro.genomics.scripts.ValidLoginLogout')
+data.setCell(1, 3, 8652);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testValidLoginLogout')
-data.setCell(2, 2, 'euro.genomics.scripts.ValidLoginLogout')
-data.setCell(2, 3, 4245);
+data.setCell(2, 1, 'testVerifyProductVersion')
+data.setCell(2, 2, 'euro.genomics.scripts.VerifyProductVersion')
+data.setCell(2, 3, 7737);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testVerifyProductVersion')
+data.setCell(3, 2, 'euro.genomics.scripts.VerifyProductVersion')
+data.setCell(3, 3, 7275);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testValidLoginLogout')
+data.setCell(4, 2, 'euro.genomics.scripts.ValidLoginLogout')
+data.setCell(4, 3, 6203);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testInvaliLogin')
+data.setCell(5, 2, 'euro.genomics.scripts.InvalidLogin')
+data.setCell(5, 3, 5891);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 55 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -270,46 +418,96 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">euro.genomics.scripts.InvalidLogin</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">preCondition</span>
+                <span class="method-name">preCondition(http://192.168.1.4:4444/wd/hub, firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(http://192.168.1.4:4444/wd/hub, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testInvaliLogin</span>
-                <span class="method-start">9583 ms</span>
+                <span class="method-start">48902 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvaliLogin</span>
+                <span class="method-start">59716 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">28576 ms</span>
+                <span class="method-start">65608 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">euro.genomics.scripts.ValidLoginLogout</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">preCondition</span>
-                <span class="method-start">28589 ms</span>
+                <span class="method-name">preCondition(http://192.168.1.4:4444/wd/hub, chrome)</span>
+                <span class="method-start">66050 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">euro.genomics.scripts.InvalidLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">68369 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">euro.genomics.scripts.ValidLoginLogout</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(http://192.168.1.4:4444/wd/hub, firefox)</span>
+                <span class="method-start">68388 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidLoginLogout</span>
-                <span class="method-start">39298 ms</span>
+                <span class="method-start">73830 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidLoginLogout</span>
+                <span class="method-start">81917 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">43543 ms</span>
+                <span class="method-start">82483 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">euro.genomics.scripts.VerifyProductVersion</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">preCondition</span>
-                <span class="method-start">43565 ms</span>
+                <span class="method-name">preCondition(http://192.168.1.4:4444/wd/hub, chrome)</span>
+                <span class="method-start">84951 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">euro.genomics.scripts.ValidLoginLogout</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">88120 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">euro.genomics.scripts.VerifyProductVersion</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition(http://192.168.1.4:4444/wd/hub, firefox)</span>
+                <span class="method-start">88157 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testVerifyProductVersion</span>
-                <span class="method-start">60215 ms</span>
+                <span class="method-start">90804 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">67934 ms</span>
+                <span class="method-start">98541 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testVerifyProductVersion</span>
+                <span class="method-start">99755 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">107030 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
