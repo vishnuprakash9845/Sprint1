@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -17,14 +18,19 @@ public abstract class BaseTest implements AutoConst{
 
 	public WebDriver driver;
 	
-	
+	@Parameters({"remoteURL","browser"})
+	@BeforeMethod
 	//Old Code
-/*	public void preCondition()
+	public void preCondition()
 	{
-		driver=new FirefoxDriver();
+		String key="webdriver.chrome.driver";
+		String value="./driver/chromedriver.exe";
+		System.setProperty(key, value);
+		driver=new ChromeDriver();
 		driver.get("http://localhost");
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	}*/
+	}
 	
 	/*//New Code-1
 	public void preCondition() throws MalformedURLException
@@ -44,10 +50,8 @@ public abstract class BaseTest implements AutoConst{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}*/
 	
-	//New Code-2
-	@Parameters({"remoteURL","browser"})
-	@BeforeMethod
-		public void preCondition(String remoteURL,String browser) throws MalformedURLException
+	//New Code-2	
+		/*public void preCondition(String remoteURL,String browser) throws MalformedURLException
 		{
 			URL ra=new URL(remoteURL);
 			DesiredCapabilities dc=new DesiredCapabilities();
@@ -60,7 +64,7 @@ public abstract class BaseTest implements AutoConst{
 			driver.get("http://localhost");
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		}
+		}*/
 	
 	@AfterMethod
 	public void postCondition()

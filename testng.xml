@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests">
+<suite name="Suite" >
   <test name="TestFF_VishnuDesktop">
   <parameter name="remoteURL" value="http://192.168.1.4:4444/wd/hub"/>
   <parameter name="browser" value="firefox"/>
@@ -9,7 +9,7 @@
       <class name="euro.genomics.scripts.ValidLoginLogout"/>
       <class name="euro.genomics.scripts.VerifyProductVersion"/>
     </classes>
-  </test> <!-- TestFF_VishnuDesktop -->
+  </test> 
   <test name="TestChrome_VishnuDesktop">
   <parameter name="remoteURL" value="http://192.168.1.4:4444/wd/hub"/>
   <parameter name="browser" value="chrome"/>

@@ -13,7 +13,7 @@ public class InvalidLogin extends BaseTest{
 	{
 		int rc=Excel.getRowCount(XL_PATH, "InvalidLogin");
 		
-		for(int i=0;i<=rc;i++)
+		for(int i=1;i<=rc-4;i++)
 		{
 			String un=Excel.getCellValue(XL_PATH, "InvalidLogin",i, 0);
 			String pw=Excel.getCellValue(XL_PATH, "InvalidLogin",i, 1);
@@ -24,7 +24,7 @@ public class InvalidLogin extends BaseTest{
 			l.clickLogin();
 			l.verifyErrMsgDisplayed();
 			
-			WaitForMoment.wait(2);
+			WaitForMoment.wait(1);
 		}
 	}
 	
